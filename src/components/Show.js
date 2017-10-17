@@ -2,13 +2,14 @@ import React from 'react';
 
 class Show extends React.Component {
   render() {
-    const details = this.props.details;
+    const { details, index } = this.props.details;
     return (
-      <li>
-        <h3>{details.name}</h3>
+      <li className="display-show">
+        <h3 className="show-name">{details.name}</h3>
         <img src={details.image} alt={details.name} height="338" width="225" />
         <p>{details.desc}</p>
-        <p># of seasons:{details.seasons}</p>
+        <p># of seasons: {details.seasons}</p>
+        <button onClick={() => }>Predictions</button>
       </li>
     )
   }

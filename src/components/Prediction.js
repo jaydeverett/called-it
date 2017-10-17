@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Prediction extends Component {
+class Prediction extends React.Component {
   render() {
+    const details = this.props.details;
     return (
-      <div>
-        <p>Prediction</p>
-      </div>
-    );
+      <li className="display-prediction">
+        <p>{details.prediction}</p>
+      </li>
+    )
   }
 }
 

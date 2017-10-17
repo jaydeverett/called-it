@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 class AddShowForm extends React.Component {
   createShow(e) {
@@ -10,6 +10,7 @@ class AddShowForm extends React.Component {
       image: this.image.value,
       seasons: this.seasons.value,
       desc: this.desc.value,
+      prediction: this.prediction.value 
     }
     this.props.addShow(show);
     this.showForm.reset();
